@@ -1,7 +1,7 @@
 package board;
 public class Board {
-    int size;
-    char matrix[][];
+    public int size;
+    public char matrix[][];
 
     public Board(int size, char symbol) {
         this.size = size;
@@ -23,9 +23,10 @@ public class Board {
         }
     }
 //print the matrix
-    public void printBoard() {
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+public void printBoard() {
+    int sz = this.size;
+        for (int i = 0; i < sz; i++) {
+            for (int j = 0; j < sz; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();

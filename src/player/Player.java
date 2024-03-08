@@ -17,7 +17,14 @@ public class Player {
         this.number = number;
         this.email = email;
     }
- 
+    
+    public String getPlayerName() {
+        return this.name;
+    }
+
+    public char getSymbol() {
+        return this.symbol;
+    }
     public void getPlayer() {
         System.out.println("Name: " + this.name);
         System.out.println("Symbol: " + this.symbol);
